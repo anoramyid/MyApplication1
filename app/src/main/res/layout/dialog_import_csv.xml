@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/surface_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How to Use Import"
+            android:textColor="@color/accent_green"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Format: name,host,user,pass,port,group\n2. Group must be created first.\n3. One device per line."
+            android:textColor="@color/text_grey"
+            android:textSize="13sp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Example:"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="stb-kamar,10.10.11.1,root,pass123,22,stb\nFA01,10.10.11.2,admin,admin123,22,Cisco"
+            android:textColor="#00FF00"
+            android:background="#151821"
+            android:padding="8dp"
+            android:fontFamily="monospace"
+            android:textSize="11sp"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etCsvInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:gravity="top"
+            android:hint="Paste your CSV data here..."
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_grey"
+            android:background="@drawable/side_nav_bar"
+            android:padding="12dp"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+</ScrollView>
